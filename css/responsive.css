@@ -1,0 +1,40 @@
+
+nav{
+    flex-direction: column;
+}
+#panel{
+    margin-bottom: 0.4rem;
+}
+
+
+
+
+img{
+    margin-bottom: 0rem;
+}
+#services{
+    flex-direction: column;
+}
+
+
+#client-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:515px)
+{
+    #clients::before{
+        height:21rem;
+    }
+
+    #panel ul li a{
+        font-size: 1rem;
+        padding: 0rem;
+        margin: 0.26rem;
+    }
+
+}
+

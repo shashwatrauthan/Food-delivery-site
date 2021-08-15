@@ -1,0 +1,306 @@
+*{
+   padding: 0rem; 
+   margin: 0rem;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* NAVIGATION BAR */
+
+
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: auto;
+
+}
+
+#panel{
+    display: flex;
+}
+
+nav::before{
+    content: "";
+    background-color: #222222;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 60%;
+    z-index: -1;
+
+
+}
+
+#logo img{
+    height: 4.2rem;
+    width : 4.2rem;
+    margin-left: 0.6rem;
+    margin-right: 0.8rem;
+
+}
+
+#panel ul{
+    display: flex;
+
+}
+
+#panel ul li{
+    margin: 0.2rem;
+    list-style: none;
+}
+
+#panel ul li a{
+    padding: 0.4rem 0.6rem;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    font-weight: 400;
+    transition: background-color 0.3s ease-in 0s;
+}
+
+
+
+#panel ul li a:hover{
+    background-color: aliceblue;
+    color: rgb(73, 73, 73);
+}
+
+
+
+/* HOME */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 32rem;
+    color: aliceblue;
+    position:relative;
+}
+
+
+#home::before{
+    content: "";
+    background: url("../bg1.jpg") no-repeat center/cover;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 33rem;
+    width: 100%;
+    z-index: -2;
+
+}
+
+#home h2{
+    font-weight: 600;
+    margin: 1.2rem;
+    font-size: 2rem;
+}
+
+#home p{
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgb(53, 53, 53);
+}
+
+
+#btn{
+    margin: 1.2rem;
+    color: rgb(73, 73, 73);
+    font-weight: 600;
+    padding: 0.6rem 1.0rem;
+    background-color: aliceblue;
+    border: 0.18rem solid rgb(73, 73, 73);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.h2cls{
+    font-weight: 600;
+    font-size: 2rem;
+    display: block;
+    margin-top: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+/* SERVICES */
+
+#cards{
+    margin-top: 2.5rem;
+
+}
+
+#services {
+    display: flex;
+
+
+}
+
+.img{
+    height: 8.2rem;
+    width: 8.2rem;
+    display: block;
+    margin: 1rem auto;
+
+}
+
+.card{
+    border: 0.2rem solid rgb(73, 73, 73);
+    padding: 0.8rem;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    background-color: rgb(238, 238, 238);
+
+}
+
+.center{
+    text-align: center;
+}
+
+.card_title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+
+/* CLIENTS */
+
+#our-clients{
+    margin-top: 1.8rem;
+    padding-top: 2.2rem;
+    padding-bottom: 0.6rem;
+}
+
+#client-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-flex img{
+    height: 4.4rem;
+}
+
+
+
+.client-item{
+    margin: 1.2rem;
+    
+}
+
+#clients::before{
+    content: "";
+    background: url("../bg.jpg") no-repeat;
+    height: 14rem;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 75%;
+    background-position: -77rem;
+}
+
+
+
+
+/* CONTACT */
+
+#contact-us{
+    margin-top: 3rem;
+}
+
+
+.form-item label{
+    font-weight: 500;
+    text-align: justify;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgb(73, 73, 73);
+
+}
+
+
+.form-item input{
+    height: 1.6rem;
+    width: 18rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
+    padding: 0.1rem;
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+    border: 0.16rem solid rgb(71, 71, 71);
+    border-radius: 0.3rem;
+
+}
+
+
+#contact::before{
+    content: "";
+    background: url("../contact.jpg") no-repeat center center/cover;
+    height: 31rem;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.form-item{
+    padding: 0.1rem;
+    margin: 0.1rem;
+
+}
+
+textarea{
+    font-weight: 500;
+    color: rgb(65, 65, 65);
+    padding: 0.1rem;
+    border: 0.16rem solid rgb(71, 71, 71);
+    border-radius: 0.3rem;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+
+#send-msg{
+    width: 9rem;
+    height: 2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    margin-left: 9.2rem;
+    font-weight: 600;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    margin-top: 0.4rem;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: aliceblue;
+    padding: 0.2rem;
+    background-color: rgb(73, 73, 73);
+}
+
+
